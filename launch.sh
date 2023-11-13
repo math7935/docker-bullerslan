@@ -12,10 +12,10 @@ else
 	exit 99
 fi
 
-if ! [[ -f 'bullerslan-server-files-0.0.2.zip' ]]; then
+if ! [[ -f 'bullerslan-server-files-0.0.4.zip' ]]; then
 	rm -fr defaultconfigs config kubejs libraries mods Simple.zip forge*
-	curl -Lo 'bullerslan-server-files-0.0.2.zip' 'https://edge.forgecdn.net/files/4862/260/bullerslan-server-files-0.0.2.zip' || exit 9
-	unzip -u -o 'bullerslan-server-files-0.0.2.zip' -d /data
+	curl -Lo 'bullerslan-server-files-0.0.4.zip' 'https://edge.forgecdn.net/files/4862/260/bullerslan-server-files-0.0.4.zip' || exit 9
+	unzip -u -o 'bullerslan-server-files-0.0.4.zip' -d /data
 	DIR_TEST=$(find . -type d -maxdepth 1 | tail -1 | sed 's/^.\{2\}//g')
 	if [[ $(find . -type d -maxdepth 1 | wc -l) -gt 1 ]]; then
 		cd "${DIR_TEST}"
