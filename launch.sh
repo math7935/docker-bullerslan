@@ -14,7 +14,7 @@ fi
 
 if ! [[ -f 'bullerslan-server-files-0.0.4.zip' ]]; then
 	rm -fr defaultconfigs config kubejs libraries mods Simple.zip forge*
-	curl -Lo 'bullerslan-server-files-0.0.4.zip' 'https://edge.forgecdn.net/files/4864/854/bullerslan-server-files-0.0.4.zip' || exit 9
+	curl -Lo 'bullerslan-server-files-0.0.4.zip' 'https://mediafilez.forgecdn.net/files/4864/854/bullerslan-server-files-0.0.4.zip' || exit 9
 	unzip -u -o 'bullerslan-server-files-0.0.4.zip' -d /data
 	DIR_TEST=$(find . -type d -maxdepth 1 | tail -1 | sed 's/^.\{2\}//g')
 	if [[ $(find . -type d -maxdepth 1 | wc -l) -gt 1 ]]; then
